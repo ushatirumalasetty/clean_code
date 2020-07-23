@@ -1,0 +1,24 @@
+Clean Code Results Summary at 28 Apr 11 40 AM:
+
+Overall Score: 6.952789699570816
+
+File wise summary:
+utils: 7.368421052631579
+utils.get_posts_with_more_positive_reactions: 8.88888888888889
+utils.get_user_posts: 8.571428571428571
+utils.get_replies_for_comment: 7.142857142857143
+utils.delete_post: 7.142857142857143
+utils.get_posts_reacted_by_user: 10.0
+utils.get_total_reaction_count: 7.5
+utils.create_post: 8.75
+utils.common_utils: 6.428571428571429
+utils.validity: 8.461538461538462
+utils.get_reaction_metrics: 8.571428571428571
+utils.reply_to_comment: 7.222222222222222
+utils.create_comment: 10.0
+utils.dict_post_details: -9.375
+utils.react_to_post: 7.5
+utils.get_reactions_to_post: 10.0
+utils.get_post: 8.571428571428571
+utils.react_to_comment: 8.333333333333334
+fb_post/exceptions: 9.444444444444445

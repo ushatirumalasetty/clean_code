@@ -1,0 +1,18 @@
+************* Module tests.test_car_apply_brake
+tests/test_car_apply_brake.py:42: [C0301(line-too-long), ] Line too long (92/79)
+************* Module tests.test_truck_constructors
+tests/test_truck_constructors.py:16: [R0915(too-many-statements), test_truck_constructor_for_multiple_objects_creation] Too many statements (21/20)
+************* Module tests.test_race_car
+tests/test_race_car.py:33: [C0301(line-too-long), ] Line too long (85/79)
+tests/test_race_car.py:106: [C0301(line-too-long), ] Line too long (86/79)
+tests/test_race_car.py:115: [C0301(line-too-long), ] Line too long (86/79)
+tests/test_race_car.py:172: [C0301(line-too-long), ] Line too long (83/79)
+************* Module tests.test_truck_invalid
+tests/test_truck_invalid.py:7: [C0301(line-too-long), ] Line too long (91/79)
+tests/test_truck_invalid.py:20: [C0301(line-too-long), ] Line too long (91/79)
+tests/test_truck_invalid.py:34: [C0301(line-too-long), ] Line too long (91/79)
+tests/test_truck_invalid.py:47: [C0301(line-too-long), ] Line too long (91/79)
+
+-------------------------------------------------------------------
+Your code has been rated at 9.87/10 (previous run: 10.00/10, -0.13)
+

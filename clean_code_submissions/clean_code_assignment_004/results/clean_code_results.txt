@@ -1,0 +1,132 @@
+************* Module utils
+fb_post/utils/__init__.py:6: [C0301(line-too-long), ] Line too long (90/79)
+fb_post/utils/__init__.py:21: [C0301(line-too-long), ] Line too long (81/79)
+fb_post/utils/__init__.py:23: [C0301(line-too-long), ] Line too long (82/79)
+fb_post/utils/__init__.py:23: [C0326(bad-whitespace), ] Exactly one space required after comma
+           "get_replies_for_comment","get_total_reaction_count", "get_user_posts",
+                                    ^
+fb_post/utils/__init__.py:25: [C0301(line-too-long), ] Line too long (80/79)
+************* Module utils.get_posts_with_more_positive_reactions
+fb_post/utils/get_posts_with_more_positive_reactions.py:6: [C0326(bad-whitespace), ] Exactly one space required after comma
+    positive_reactions = ["THUMBS-UP", "LIT","LOVE", "HAHA", "WOW"]
+                                            ^
+************* Module utils.get_user_posts
+fb_post/utils/get_user_posts.py:14: [C0303(trailing-whitespace), ] Trailing whitespace
+************* Module utils.get_replies_for_comment
+fb_post/utils/get_replies_for_comment.py:7: [W0511(fixme), ] TODO : duplication of code
+fb_post/utils/get_replies_for_comment.py:21: [C0301(line-too-long), ] Line too long (82/79)
+************* Module utils.delete_post
+fb_post/utils/delete_post.py:8: [W0511(fixme), ] TODO Duplication
+fb_post/utils/delete_post.py:3: [W0611(unused-import), ] Unused is_post_valid imported from validity
+fb_post/utils/delete_post.py:5: [C0411(wrong-import-order), ] first party import "from fb_post.exceptions import UserCannotDeletePostException" should be placed before "from .validity import is_user_valid, is_post_valid"
+fb_post/utils/delete_post.py:7: [C0411(wrong-import-order), ] first party import "from fb_post.exceptions import InvalidPostException" should be placed before "from .validity import is_user_valid, is_post_valid"
+************* Module utils.get_total_reaction_count
+fb_post/utils/get_total_reaction_count.py:3: [C0411(wrong-import-order), ] third party import "from django.db.models import Count" should be placed before "from fb_post.models import Reaction"
+************* Module utils.create_post
+fb_post/utils/create_post.py:9: [C0301(line-too-long), ] Line too long (82/79)
+************* Module utils.common_utils
+fb_post/utils/common_utils.py:7: [C0303(trailing-whitespace), ] Trailing whitespace
+fb_post/utils/common_utils.py:10: [C0303(trailing-whitespace), ] Trailing whitespace
+fb_post/utils/common_utils.py:19: [C0303(trailing-whitespace), ] Trailing whitespace
+fb_post/utils/common_utils.py:21: [C0303(trailing-whitespace), ] Trailing whitespace
+fb_post/utils/common_utils.py:24: [C0305(trailing-newlines), ] Trailing newlines
+************* Module utils.validity
+fb_post/utils/validity.py:42: [W0511(fixme), ] TODO  enums
+fb_post/utils/validity.py:43: [C0326(bad-whitespace), ] Exactly one space required after assignment
+    reactions_list =["WOW", "LIT", "LOVE", "HAHA", "THUMBS-UP",
+                   ^
+fb_post/utils/validity.py:13: [W0621(redefined-outer-name), is_comment_content_valid] Redefining name 'is_comment_content_valid' from outer scope (line 12)
+fb_post/utils/validity.py:37: [W0621(redefined-outer-name), is_post_content_valid] Redefining name 'is_post_content_valid' from outer scope (line 36)
+fb_post/utils/validity.py:49: [W0621(redefined-outer-name), is_reply_content_valid] Redefining name 'is_reply_content_valid' from outer scope (line 48)
+fb_post/utils/validity.py:9: [W0611(unused-import), ] Unused Reaction imported from fb_post.models
+************* Module utils.get_reaction_metrics
+fb_post/utils/get_reaction_metrics.py:5: [C0411(wrong-import-order), ] third party import "from django.db.models import Count" should be placed before "from fb_post.models import Reaction"
+************* Module utils.reply_to_comment
+fb_post/utils/reply_to_comment.py:24: [C0330(bad-continuation), ] Wrong continued indentation (add 8 spaces).
+                                   commented_by_id=user_id,
+                                   ^       |
+fb_post/utils/reply_to_comment.py:25: [C0330(bad-continuation), ] Wrong continued indentation (add 8 spaces).
+                                   post_id=comment_obj.post_id,
+                                   ^       |
+fb_post/utils/reply_to_comment.py:26: [C0330(bad-continuation), ] Wrong continued indentation (add 8 spaces).
+                                   parent_comment_id=parent_comment_id)
+                                   ^       |
+fb_post/utils/reply_to_comment.py:20: [W0127(self-assigning-variable), reply_to_comment] Assigning the same variable 'parent_comment_id' to itself
+fb_post/utils/reply_to_comment.py:5: [C0411(wrong-import-order), ] first party import "from fb_post.exceptions import InvalidCommentException" should be placed before "from .validity import is_user_valid, is_reply_content_valid"
+************* Module utils.dict_post_details
+fb_post/utils/dict_post_details.py:8: [W0511(fixme), ] TODO : duplication
+fb_post/utils/dict_post_details.py:32: [W0511(fixme), ] TODO : duplication
+fb_post/utils/dict_post_details.py:47: [W0511(fixme), ] TODO : 
+fb_post/utils/dict_post_details.py:50: [W0511(fixme), ] TODO : encapuslation condition
+fb_post/utils/dict_post_details.py:61: [W0511(fixme), ] TODO : 
+fb_post/utils/dict_post_details.py:7: [C0330(bad-continuation), ] Wrong hanging indentation (remove 13 spaces).
+                     "comment_id": reply_obj.id,
+        |            ^
+fb_post/utils/dict_post_details.py:8: [C0330(bad-continuation), ] Wrong hanging indentation (remove 13 spaces).
+                     "commenter": {# TODO : duplication
+        |            ^
+fb_post/utils/dict_post_details.py:13: [C0330(bad-continuation), ] Wrong hanging indentation (remove 13 spaces).
+                     "commented_at": strf_time_formating(reply_obj.commented_at),
+        |            ^
+fb_post/utils/dict_post_details.py:13: [C0301(line-too-long), ] Line too long (81/79)
+fb_post/utils/dict_post_details.py:14: [C0330(bad-continuation), ] Wrong hanging indentation (remove 13 spaces).
+                     "comment_content": reply_obj.content,
+        |            ^
+fb_post/utils/dict_post_details.py:15: [C0330(bad-continuation), ] Wrong hanging indentation (remove 13 spaces).
+                     "reactions": {
+        |            ^
+fb_post/utils/dict_post_details.py:17: [C0301(line-too-long), ] Line too long (114/79)
+fb_post/utils/dict_post_details.py:23: [C0326(bad-whitespace), ] Exactly one space required before assignment
+    comments_dict= {
+                 ^
+fb_post/utils/dict_post_details.py:34: [C0301(line-too-long), ] Line too long (111/79)
+fb_post/utils/dict_post_details.py:47: [C0303(trailing-whitespace), ] Trailing whitespace
+fb_post/utils/dict_post_details.py:49: [C0303(trailing-whitespace), ] Trailing whitespace
+fb_post/utils/dict_post_details.py:53: [C0330(bad-continuation), ] Wrong hanging indentation (remove 11 spaces).
+                   "post_id": post_obj.id,
+        |          ^
+fb_post/utils/dict_post_details.py:54: [C0330(bad-continuation), ] Wrong hanging indentation (remove 11 spaces).
+                   "posted_by": {
+        |          ^
+fb_post/utils/dict_post_details.py:58: [C0330(bad-continuation), ] Wrong hanging indentation.
+                    },
+                   |^  |
+fb_post/utils/dict_post_details.py:59: [C0330(bad-continuation), ] Wrong hanging indentation (remove 11 spaces).
+                   "posted_at": strf_time_formating(post_obj.posted_at),
+        |          ^
+fb_post/utils/dict_post_details.py:60: [C0330(bad-continuation), ] Wrong hanging indentation (remove 11 spaces).
+                   "post_content": post_obj.content,
+        |          ^
+fb_post/utils/dict_post_details.py:61: [C0330(bad-continuation), ] Wrong hanging indentation (remove 11 spaces).
+                   "reactions": {# TODO : 
+        |          ^
+fb_post/utils/dict_post_details.py:61: [C0303(trailing-whitespace), ] Trailing whitespace
+fb_post/utils/dict_post_details.py:63: [C0301(line-too-long), ] Line too long (111/79)
+fb_post/utils/dict_post_details.py:64: [C0303(trailing-whitespace), ] Trailing whitespace
+fb_post/utils/dict_post_details.py:65: [C0330(bad-continuation), ] Wrong hanging indentation (remove 11 spaces).
+                   "comments" : comment_list,
+        |          ^
+fb_post/utils/dict_post_details.py:66: [C0330(bad-continuation), ] Wrong hanging indentation (remove 11 spaces).
+                   "comments_count": len(comment_list),
+        |          ^
+fb_post/utils/dict_post_details.py:6: [W0621(redefined-outer-name), replies_dict] Redefining name 'replies_dict' from outer scope (line 5)
+fb_post/utils/dict_post_details.py:23: [W0621(redefined-outer-name), comments_dict] Redefining name 'comments_dict' from outer scope (line 22)
+fb_post/utils/dict_post_details.py:43: [W2207(max-for-block-size), get_dict_details_of_post] Too many statements in for block (8/4)
+fb_post/utils/dict_post_details.py:1: [W0611(unused-import), ] Unused datetime imported from datetime
+************* Module utils.react_to_post
+fb_post/utils/react_to_post.py:15: [W0511(fixme), ] TODO  naming
+fb_post/utils/react_to_post.py:19: [C0301(line-too-long), ] Line too long (86/79)
+fb_post/utils/react_to_post.py:22: [C0304(missing-final-newline), ] Final newline missing
+************* Module utils.get_post
+fb_post/utils/get_post.py:16: [C0303(trailing-whitespace), ] Trailing whitespace
+************* Module utils.react_to_comment
+fb_post/utils/react_to_comment.py:14: [W0511(fixme), ] TODO naming
+fb_post/utils/react_to_comment.py:18: [C0301(line-too-long), ] Line too long (89/79)
+************* Module fb_post/constants
+fb_post/constants.py:1: [C0103(invalid-name), ] Module name "fb_post/constants" doesn't conform to snake_case naming style
+************* Module fb_post/exceptions
+fb_post/exceptions.py:1: [C0103(invalid-name), ] Module name "fb_post/exceptions" doesn't conform to snake_case naming style
+
+------------------------------------------------------------------
+Your code has been rated at 6.95/10 (previous run: 9.91/10, -2.96)
+
